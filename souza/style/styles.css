@@ -1,0 +1,518 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #000000; 
+    background-color: #FFFFFF; 
+    width: 100%;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ADD8E6; 
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #FFFFFF; 
+}
+
+/* Seção Home */
+.home-section {
+    padding: 50px 0;
+    background-color: #FFFFFF;
+}
+
+.product-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.product-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.product-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+    flex: 1;
+    min-width: 300px;
+}
+
+.product-details h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.product-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.product-features {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.product-features li {
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.product-features i {
+    color: #ADD8E6; 
+    margin-right: 10px;
+}
+
+.price-section {
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.old-price {
+    font-size: 20px;
+    color: #888888;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.buy-button {
+    background-color: #ADD8E6; 
+    color: #000000;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #87CEEB; 
+}
+
+/* Footer */
+.footer {
+    background-color: #ADD8E6; 
+    color: #000000;
+    padding: 40px 0 20px;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 30px;
+}
+
+.social-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #FFFFFF; 
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #FFFFFF;
+    padding-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .product-showcase {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+/* main pg. sobre*/
+.contact-simple-main {
+  padding: 4rem 0;
+  min-height: calc(100vh - 200px);
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+/* Card Centralizado do Form  */
+.simple-contact-card {
+  background-color: #a4a4a4;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.simple-contact-card:hover {
+  box-shadow: 0 10px 20px rgba(139, 69, 19, 0.2);
+}
+
+.simple-contact-card h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+
+.simple-contact-card h3 i {
+  color: #8b4513;
+}
+
+/* Formulário Direto  */
+.simple-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Campos do Form */
+.simple-form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.simple-form-field label {
+  font-size: 0.95rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.simple-contact-form input,
+.simple-contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  background-color: #222;
+  border: 1px solid #444;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  font-family: inherit;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  resize: vertical;
+}
+
+.simple-contact-form input:focus,
+.simple-contact-form textarea:focus {
+  outline: none;
+  border-color: #8b4513; /* Marrom no foco */
+  box-shadow: 0 0 5px rgba(139, 69, 19, 0.3);
+}
+
+.simple-contact-form input::placeholder,
+.simple-contact-form textarea::placeholder {
+  color: #888;
+}
+
+.simple-contact-form textarea {
+  min-height: 150px;
+}
+
+/* Botão Enviar  */
+.submit-simple-btn {
+  background-color: #8b4513;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.submit-simple-btn:hover,
+.submit-simple-btn:focus {
+  background-color: #fff;
+  color: #8b4513;
+  box-shadow: 0 5px 15px rgba(139, 69, 19, 0.3);
+  transform: translateY(-2px);
+}
+
+.submit-simple-btn i {
+  transition: transform 0.3s ease;
+}
+
+.submit-simple-btn:hover i {
+  transform: translateX(5px);
+}
+
+
+.login-main {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #000 0%, #111 100%);
+}
+
+/* =======================
+    LOGIN CARD
+======================= */
+
+.login-card {
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 15px;
+  padding: 3rem;
+  max-width: 450px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(255, 255, 255, 0.1);
+}
+
+.login-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.login-title i {
+  color: #f8f8f8;
+}
+
+.login-subtitle {
+  color: #ccc;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* =======================
+    PRIMEIRO CARD
+======================= */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper i {
+  position: absolute;
+  left: 1rem;
+  color: #666;
+  z-index: 1;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3rem;
+  background-color: #222;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #ffffff;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+}
+
+.login-form input::placeholder {
+  color: #888;
+}
+
+.submit-btn {
+  background-color: #c7c6c6;
+  color: #000000;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.submit-btn:hover {
+  background-color: #ffffff;
+  transform: scale(1.02);
+}
+
+.submit-btn i {
+  transition: transform 0.3s ease;
+}
+
+.submit-btn:hover i {
+  transform: translateX(5px);
+}
+
+.login-links {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
